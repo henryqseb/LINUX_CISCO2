@@ -48,3 +48,13 @@ rm -r Work
 
 # Verify the directory was removed
 ls Work
+
+# SECTION 14 - Filtering Input (grep command)
+# Navigate to the Documents directory
+cd ~/Documents
+
+# Copy /etc/passwd to current directory (required for grep examples)
+cp /etc/passwd .
+
+# Search for a specific user pattern in the passwd file
+grep sysadmin passwd
