@@ -140,3 +140,16 @@ shutdown 01:51
 
 # Schedule shutdown in 1 minute with a custom broadcast message
 shutdown +1 "Goodbye World!"
+
+# SECTION 16 - Network Configuration (ifconfig and ping)
+# Display all network interface configurations
+ifconfig
+
+# Send 4 ping packets to verify connectivity to a host
+ping -c 4 192.168.1.2
+
+# Ping a host that does not exist shows Destination Host Unreachable
+ping -c 4 192.168.1.3
+
+# Exit root account
+exit
