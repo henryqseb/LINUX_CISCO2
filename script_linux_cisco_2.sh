@@ -267,3 +267,6 @@ vi newfile.txt
 # - NDG Linux Essentials
 # - NDG Linux Series 
 # - IT Essentials
+
+# SECTION 22.1 - Linux for Cisco Certified CyberOps Associate
+# No commands closing section about CyberOps career path
