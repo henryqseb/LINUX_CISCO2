@@ -28,3 +28,23 @@ mv animals.txt zoo.txt
 
 # Verify the rename
 ls
+
+# SECTION 13 - Removing Files (rm command)
+
+# Navigate to the Documents directory
+cd ~/Documents
+
+# Remove a regular file permanently
+rm linux.txt
+
+# Verify the file was removed
+ls linux.txt
+
+# Try to remove a directory without options (this will fail)
+rm Work
+
+# Remove a directory and all its contents recursively
+rm -r Work
+
+# Verify the directory was removed
+ls Work
