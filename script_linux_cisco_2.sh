@@ -199,3 +199,31 @@ passwd sysadmin
 
 # Exit root account
 exit
+
+# SECTION 20 - I/O Redirection
+# Navigate to the Documents directory
+cd ~/Documents
+
+# Display file content in terminal standard output - STDOUT
+cat food.txt
+
+# Redirect STDOUT to a new file overwrites if file exists
+cat food.txt > newfile1.txt
+
+# Verify the content was written to the new file
+cat newfile1.txt
+
+# Print a string to the terminal using echo
+echo "Hello"
+
+# Redirect echo output to a file overwrites existing content
+echo "I like food." > newfile1.txt
+
+# Verify the file content was overwritten
+cat newfile1.txt
+
+# Append content to an existing file using >>
+echo "This food is good." >> newfile1.txt
+
+# Verify both lines exist in the file
+cat newfile1.txt
