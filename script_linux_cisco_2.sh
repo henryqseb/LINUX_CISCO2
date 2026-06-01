@@ -7,3 +7,24 @@ cd ~
 # bs = block size 
 # count = number of blocks to copy
 dd if=/dev/zero of=/tmp/swapex bs=1M count=50
+# SECTION 12 - Moving Files (mv command)
+# Navigate to the Documents directory
+cd ~/Documents
+
+# Move a file to a directory
+mv people.csv Work
+
+# Verify the file was moved
+ls Work
+
+# Move multiple files to a directory at once
+mv numbers.txt letters.txt alpha.txt School
+
+# Verify the files were moved
+ls School
+
+# Rename a file by moving it within the same directory
+mv animals.txt zoo.txt
+
+# Verify the rename
+ls
