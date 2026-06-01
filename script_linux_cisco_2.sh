@@ -58,3 +58,6 @@ cp /etc/passwd .
 
 # Search for a specific user pattern in the passwd file
 grep sysadmin passwd
+
+# SECTION 14.1 - Regular Expressions (Basic)
+#Regular Expressions (Theory - no commands)
