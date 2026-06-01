@@ -124,3 +124,19 @@ grep 'z*' red.txt
 
 # Use * with e - matches zero or more e matches every line since e can appear 0 times
 grep 'e*' red.txt
+
+# SECTION 15 - Shutting Down the System (shutdown command)
+# Switch to root account (password: netlab123)
+su -
+
+# Shut down the system immediately
+shutdown now
+
+# Check current system date and time
+date
+
+# Schedule shutdown at a specific time
+shutdown 01:51
+
+# Schedule shutdown in 1 minute with a custom broadcast message
+shutdown +1 "Goodbye World!"
