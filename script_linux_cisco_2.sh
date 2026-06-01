@@ -163,3 +163,23 @@ ps -e
 
 # Display all processes with full details (user, PID, PPID, command with args)
 ps -ef
+
+# SECTION 18 - Package Management (apt-get)
+# Update the list of available packages from repositories
+sudo apt-get update
+
+# Search for packages related to a keyword
+apt-cache search cow
+
+# Install a package cowsay
+sudo apt-get install cowsay
+
+# Use the installed cowsay command
+cowsay 'NDG Linux Unhatched'
+
+# Update all installed packages
+sudo apt-get update
+sudo apt-get upgrade
+
+# Remove a package and all its configuration files (purge)
+sudo apt-get purge cowsay
