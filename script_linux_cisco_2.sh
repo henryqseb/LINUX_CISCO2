@@ -183,3 +183,19 @@ sudo apt-get upgrade
 
 # Remove a package and all its configuration files (purge)
 sudo apt-get purge cowsay
+
+# SECTION 19 - Updating User Passwords (passwd command)
+# Change the password of the current user (sysadmin)
+passwd
+
+# View password status information for a user
+passwd -S sysadmin
+
+# Switch to root account to change another user's password
+su root
+
+# Change the password of the sysadmin user (as root)
+passwd sysadmin
+
+# Exit root account
+exit
