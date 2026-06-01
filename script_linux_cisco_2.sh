@@ -227,3 +227,37 @@ echo "This food is good." >> newfile1.txt
 
 # Verify both lines exist in the file
 cat newfile1.txt
+
+# SECTION 21 - Text Editor (vi/vim)
+# Open or create a file with vi
+vi newfile.txt
+
+# COMMAND MODE - Movement keys 
+# h = left, j = down, k = up, l = right
+# w = one word forward, b = one word backward
+# ^ = beginning of line, $ = end of line
+# 5G = go to line 5, gg = first line, G = last line
+
+# EX MODE - Enter with :
+# :w = save file
+# :q = quit
+# :wq = save and quit
+# :q! = quit without saving
+# :w filename = save as filename
+
+# INSERT MODE - Enter with:
+# a = insert after cursor
+# A = insert at end of line
+# i = insert before cursor
+# I = insert at beginning of line
+# o = new line after cursor
+# O = new line before cursor
+# Press Esc to return to command mode
+
+# COMMAND MODE - Actions 
+# dd = delete current line
+# 3dd = delete next 3 lines
+# dw = delete current word
+# yy = yank (copy) current line
+# p = put (paste) after cursor
+# P = put before cursor
