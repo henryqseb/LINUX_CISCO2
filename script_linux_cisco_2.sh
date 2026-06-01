@@ -153,3 +153,13 @@ ping -c 4 192.168.1.3
 
 # Exit root account
 exit
+
+# SECTION 17 - Viewing Processes (ps command)
+# Display processes running in the current terminal
+ps
+
+# Display ALL processes running on the system
+ps -e
+
+# Display all processes with full details (user, PID, PPID, command with args)
+ps -ef
