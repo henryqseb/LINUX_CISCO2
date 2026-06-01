@@ -61,3 +61,66 @@ grep sysadmin passwd
 
 # SECTION 14.1 - Regular Expressions (Basic)
 #Regular Expressions (Theory - no commands)
+
+# SECTION 14.2 - Basic Patterns with grep
+# Navigate to Documents directory
+cd ~/Documents
+
+# Simple literal pattern search
+grep sysadmin passwd
+
+# Anchor ^ : lines that start with root
+grep 'root' passwd
+
+# Use ^ anchor to match only lines starting with root
+grep '^root' /etc/passwd
+
+# View contents of alpha-first.txt
+cat alpha-first.txt
+
+# Use $ anchor to match lines ending with 'r'
+grep 'r$' alpha-first.txt
+
+# View contents of red.txt
+cat red.txt
+
+# Use . (dot) to match any single character
+# Pattern r..f = r + any 2 chars + f
+grep 'r..f' red.txt
+
+# Pattern r..d = r + any 2 chars + d
+grep 'r..d' red.txt
+
+# Match lines with at least 4 characters
+grep '....' red.txt
+
+# Search pattern r..t inside /etc/passwd
+grep 'r..t' /etc/passwd
+
+# View contents of profile.txt
+cat profile.txt
+
+# Use [] to match any digit (0 through 9)
+grep '[0-9]' profile.txt
+
+# Use [^] to match lines containing non-numeric characters
+grep '[^0-9]' profile.txt
+
+# Use [.] to match lines containing a literal dot
+grep '[.]' profile.txt
+
+# Use * to match zero or more occurrences of previous character
+# Pattern re*d matches rd, red, reed, reeed, etc.
+grep 're*d' red.txt
+
+# Use [] with * to match zero or more of a set of characters
+grep 'r[oe]*d' red.txt
+
+# Match lines containing at least one 'e' using ee*
+grep 'ee*' red.txt
+
+# Use * with z - matches zero or more z matches every line since z can appear 0 times
+grep 'z*' red.txt
+
+# Use * with e - matches zero or more e matches every line since e can appear 0 times
+grep 'e*' red.txt
