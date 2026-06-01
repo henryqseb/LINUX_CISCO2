@@ -261,3 +261,9 @@ vi newfile.txt
 # yy = yank (copy) current line
 # p = put (paste) after cursor
 # P = put before cursor
+
+# SECTION 22 - Moving Forward (No commands - course closing section)
+# This section provides information about next courses
+# - NDG Linux Essentials
+# - NDG Linux Series 
+# - IT Essentials
